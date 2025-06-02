@@ -29,16 +29,19 @@
   <h1>Stand Up!</h1>
   <button onclick="startTimer(30)">30m</button>
   <button onclick="startTimer(60)">1h</button> <br>
-  <button onclick="resetTimer()">Reset</button>
+
 
   <div class="controls">
     <label>
       <input type="checkbox" id="repeat-toggle" checked />
-      반복 실행
+      repeat
     </label>
   </div>
 
-  <div id="timer-display">Start?</div>
+  <div id="timer-display">Start?</div> <br>
+
+
+  <button onclick="resetTimer()">Reset</button>
 
   <!-- 알림 사운드 -->
   <audio id="alert-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>

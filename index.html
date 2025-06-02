@@ -7,6 +7,8 @@
 </head>
 
 <body>
+  <button id="darkmode">Dark Mode Toggle</button>
+
   <div>
     <h1> YANG woorim </h1> <br>
     <img scr="desktop-wallpaper-shaun-the-sheep.jpg" alt="not loaded....">
@@ -23,6 +25,15 @@
       <li><a href="https://www.figma.com/proto/4i4iBXHUUnWI3gvIED7cX0/Woorim_Yang-P1_prototype?page-id=0%3A1&node-id=6039-254&p=f&viewport=521%2C389%2C0.15&t=rmZB8JkbQQi7S5p9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6039%3A254&show-proto-sidebar=1" target="_blank">P1_Personal Utility</a></li>
     </ul>
   </div>
+
+  <script>
+    document.querySelector('#darkmode').addEventListener('click', function() {
+      document.getElementsByTagName('body')[0].classList.toggle('dark');
+      document.getElementsByTagName('div')[0].classList.toggle('dark');
+      });
+
+
+  </script>
 
 
 </body>
