@@ -161,6 +161,8 @@
 
 		function setTimer(time) {
 			timeris.innerText = "The timer is running.";
+			clearInterval(count);
+			clearTimeout(alarm);
 
 			hour = Math.floor(time/60);
 			min = time%60;
